@@ -1,0 +1,21 @@
+Normaly when there involves Int and Int --> Int
+When there involves Int and Float --> Float
+When there involves Float and Float --> Float
+
+5/2 --> 2   5.0/2 --> 2.5
+2/5 --> 0   2.0/2 --> 0.00
+
+ Note:
+    int a = 3.5; In this case 3.5 (Float) will be 
+            demoted to 3(int) because a is not able to store floats.
+            hence this is not recomended
+
+    Float a = 8; a will be store 8.0
+              8 --> 8.0 (Promotion to float)
+              hence this can be applied
+
+Question 
+int k = 3.0/9 ;
+printf("The value of k is: %f", k);      value of k? and why?
+
+ans: 0.333333 

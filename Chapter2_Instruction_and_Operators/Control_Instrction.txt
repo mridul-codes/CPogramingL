@@ -1,0 +1,7 @@
+Determines the flow of control in a pogram
+four types of control instruction in C are:
+
+1.  Sequence control instruction     (One after another pograms are exicuted in Sequence)
+2.  Descision control instruction    ()
+3.  Loop control instruction         (while, do while, for)
+4.  Case control instruction

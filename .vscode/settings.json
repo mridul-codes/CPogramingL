@@ -1,0 +1,20 @@
+{
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "workbench.colorTheme": "Night Owl",
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.cursorWidth": 2,
+    "code-runner.clearPreviousOutput": true,
+    "files.autoSave": "afterDelay",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "editor.mouseWheelZoom": true,
+    "files.associations": {
+        "stdio.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
+}

@@ -1,0 +1,11 @@
+To repeat a same code of instruction for more many times 
+we efficently use loop system. The loop are of three types
+1. while loop
+2. do-while loop
+3. for loop
+
+
+1. whil (Codition if true){
+        //code
+        //code
+}
