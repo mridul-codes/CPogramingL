@@ -2,7 +2,7 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
-    "workbench.colorTheme": "Night Owl Black",
+    "workbench.colorTheme": "Night Owl (No Italics)",
     "tabnine.experimentalAutoImports": true,
     "terminal.integrated.cursorWidth": 2,
     "code-runner.clearPreviousOutput": true,
