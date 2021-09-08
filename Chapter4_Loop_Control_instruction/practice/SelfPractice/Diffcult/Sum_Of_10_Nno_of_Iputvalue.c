@@ -1,3 +1,4 @@
+//Summision of next 10 no. to the input value
 #include <stdio.h>
 
 int main()
