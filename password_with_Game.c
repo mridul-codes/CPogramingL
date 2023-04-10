@@ -51,6 +51,5 @@ int game(int guess){
     {
         printf("\n\nYou have entered wrong credentials \n\n");
     }
-    
     return 0;
 }
