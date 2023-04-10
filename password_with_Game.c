@@ -1,8 +1,20 @@
+//The code idea is by Code with haryy
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
 
+int game(int guess);
+
 int main(){
+    int guess;
+    printf("\nWe start a new content\n\tThe guess game Enter a Number to continue.........");
+    scanf("%d", &guess);
+    game(guess);
+    return 0;
+}
+
+int game(int guess){
+    
     int num, password =1681, constant = 1, constat2, input;
     srand(time(0));
     num = rand()%100 + 1;
@@ -39,7 +51,5 @@ int main(){
     {
         printf("\n\nYou have entered wrong credentials \n\n");
     }
-    
-    
     return 0;
 }

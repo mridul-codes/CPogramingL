@@ -1,0 +1,48 @@
+1.parameters :  inside the function bracket will assined its value(can be any variables)
+2.arguments :   this will be the real values directly put in the function, so they are actual value
+3.parameters here are the place holders in case of in this codding a & b are the parameters, (place to put the variables) 
+4.On the other hand here in arguments --> called sum of 8 and 3 & we get 11, in this case there are two 
+    arguments here such are 8 and 3
+
+
+Most Imp Notes:
+
+1. A function can return only one value at a time.
+eg. #include<stdio.h>
+    int main()
+    {
+        return 0;           ---> i.e no mater what the code inside the main it will always return a single value
+                                    here it is int 0.
+    }
+
+
+2. If the passed variable is changed inside the function, the function call doesnot change the value in the calling
+    function.
+eg.    #include <stdio.h>
+        int abcd(int b);
+
+        int main()
+        {
+             int a;
+             a = 2 + 3;
+
+             printf("Here it will be a missnomer\n");
+             printf("i.e 2 + 3 = 5 but the value through the line 11 will send a copy of abcd\n");
+             printf("Current value of a %d\n", a);
+             abcd(a); //===>here parameter of the call function is not related to int a in line 6
+             //after adding the missnomer in a the actual will still remain same. As a proof given bellow a print
+
+             printf("added missnomer value in a %d\n", a);       // i.e the actual value will remain same whatever given at the main function
+             //      as its not related to directly to the abcd function. Unless using pointers by call function
+             return 0;
+        }
+
+        int abcd(int b)
+        {
+            b = 123;
+            return 0;
+        }
+        //check the above code in 5_2Notes_Execise.c
+
+    //Reason Behind is: This happens a copy of b is passed to the change function
+    

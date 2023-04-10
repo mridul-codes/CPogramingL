@@ -12,41 +12,40 @@ int main(){
     scanf("%d", &time);
     printf("Please enter Am or PM\t");
     scanf("%d", &merididian);
-    if ((time>=0000||time<=1200)&&merididian==0)
+    if (merididian==0&&(time<1200&&time>=0))
     {
         gm();
     }
-    else if ((time>1200||time<=0500)&&merididian==1)
+    else if (merididian==1&&(time>=1200||time<=1159))
     {
-        ga();
+        if (time>=0&&time<=530)
+        {
+            ga();
+        }
+        else if (time>530&&time<=800)
+        {
+            ge();           
+        }
+        else if (time>800&&time<=1159)
+        {
+            gn();
+        }
+      
     }
-    else if ((time>0500||time<=800)&&merididian==1)
-    {
-        ge();
-    }
-     else// if ((time>800||time<1159)&&merididian==1)
-    {
-        gn();
-    }
+  
     
     return 0;
 
 }
 void gm(){
-    printf("\nGood Moring\n");
+    printf("\nGood Morning\n");
 }
 void ga(){
-    printf("\nGood afternoon\n");
+    printf("\nGood Afternoon\n");
 }
 void ge(){
-    printf("\nGood evening\n");
+    printf("\nGood Evening\n");
 }
 void gn(){
     printf("\nGood Night\n");
 }
-
-
-
-
-// This can't be done in normal ways. Its a problem of data struture and alogorithim. It follows the wave kind of function
-// so kind of problamtic to do in normal way

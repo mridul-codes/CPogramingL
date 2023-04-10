@@ -4,7 +4,7 @@ int main()
 {
     float c;
     float f = 9 / 5;
-    printf("Enter the degree celcuis you want to conver into fernheit\n");
+    printf("Enter the degree celsius you want to conver into fernheit\n");
     scanf("%f",&c);
     float a = c * f;
     float b = 32;
